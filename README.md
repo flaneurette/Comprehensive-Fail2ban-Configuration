@@ -473,16 +473,6 @@ maxretry = 3
 
 ## Custom Filters
 
-### Apache 4xx Filter
-
-Create `/etc/fail2ban/filter.d/apache-4xx.conf`:
-
-```ini
-[Definition]
-failregex = ^<HOST> -.*" (4\d\d|502) .*$
-ignoreregex =
-```
-
 ### WordPress Scan Filter
 
 Create `/etc/fail2ban/filter.d/wordpress-scan.conf`:
