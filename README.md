@@ -734,7 +734,7 @@ IP=$1
 
 echo "Unbanning $IP from all jails..."
 for jail in $(sudo fail2ban-client status | grep "Jail list" | sed 's/.*:\t//' | sed 's/,//g'); do
-    sudo fail2ban-client set $jail unbanip $IP 2>/dev/null && echo "  ✓ Unbanned from $jail"
+    sudo fail2ban-client set $jail unbanip $IP 2>/dev/null && echo "Unbanned from $jail"
 done
 
 echo "Done!"
