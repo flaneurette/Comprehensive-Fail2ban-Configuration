@@ -555,23 +555,13 @@ failregex = ^<HOST> -.*"GET http://.*$
 ignoreregex =
 ```
 
-### HTTP GET DoS Filter
-
-Create `/etc/fail2ban/filter.d/http-get-dos.conf`:
-
-```ini
-[Definition]
-failregex = ^<HOST> -.*"(GET|POST).*
-ignoreregex =
-```
-
 ### Port Scan Filter
 
 Create `/etc/fail2ban/filter.d/port-scan.conf`:
 
 ```ini
 [Definition]
-failregex = ^.*kernel:.*IN=.*SRC=<HOST>.*DPT=(22|23|80|443|3306|5432).*$
+failregex = ^.*kernel:.*IN=.*SRC=<HOST>.*DPT=(22|21|3306|5432).*$
 ignoreregex =
 ```
 
