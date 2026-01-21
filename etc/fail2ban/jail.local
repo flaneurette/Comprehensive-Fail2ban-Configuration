@@ -241,7 +241,7 @@ findtime = 3600
 # =============================================================================
 
 [ufw-block]
-enabled = false
+enabled = true
 filter = ufw-block
 logpath = /var/log/ufw.log
 maxretry = 5
