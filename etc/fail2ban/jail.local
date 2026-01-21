@@ -4,6 +4,7 @@
 # BE SURE TO CHANGE IT, LIKE:
 #           YOUR IP
 #           SERVER IP
+# destemail = info@example.com
 # =============================================================================
 # This configuration provides multi-layered protection with progressive banning
 
