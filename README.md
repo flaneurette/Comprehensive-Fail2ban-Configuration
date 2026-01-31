@@ -75,7 +75,7 @@ ignoreip = 127.0.0.1/8 ::1
            YOUR.IP.ADDRESS
 
 # Backend - auto or systemd for better performance
-backend = systemd
+backend = polling
 
 # =============================================================================
 # SSH PROTECTION
